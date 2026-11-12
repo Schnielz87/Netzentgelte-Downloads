@@ -1,0 +1,1 @@
+{ "name": "netzentgelte-werkzeug", "private": true, "dependencies": { "exceljs": "4.4.0" } }
