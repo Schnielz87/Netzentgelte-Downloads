@@ -96,11 +96,11 @@ async function buildGasWorkbook(ExcelJS, gas) {
   const W = 4, C0 = 4;
   ws.getColumn(1).width = 9; ws.getColumn(2).width = 19; ws.getColumn(3).width = 11;
   ys.forEach((y, k) => { for (let j = 0; j < W; j++) ws.getColumn(C0 + k * W + j).width = 12; });
-  const t = ws.getCell(1, 1); ws.mergeCells(1, 1, 1, 3); t.value = "Netznutzungsentgelte Gas"; t.font = { name: "Arial", bold: true, size: 14 }; t.border = { top: thin, left: thin, bottom: thin, right: thin };
+  const t = ws.getCell(1, 1); ws.mergeCells(1, 1, 1, 3); t.value = "Netznutzungsentgelte"; t.font = { name: "Arial", bold: true, size: 14 }; t.border = { top: thin, left: thin, bottom: thin, right: thin };
   ys.forEach((y, k) => { const c = ws.getCell(1, C0 + k * W); ws.mergeCells(1, C0 + k * W, 1, C0 + k * W + W - 1); c.value = String(y); c.font = { name: "Arial", size: 22 }; c.alignment = { horizontal: "center" }; });
   ws.getRow(1).height = 32;
   const n2 = ws.getCell(2, 1); ws.mergeCells(2, 1, 2, 3 + ys.length * W);
-  n2.value = "SLP-Netzentgelte Gas, netto. AP = Arbeitspreis ct/kWh · GP = Grundpreis €/Jahr · MSB = Messstellenbetrieb €/Jahr je Zählergröße (ZG) · Messung €/Jahr. Gelb = Wert offen. Quellen: offizielle Preisblätter (Links in der App).";
+  n2.value = "Gas · SLP · netto · AP ct/kWh · GP €/Jahr · MSB und Messung €/Jahr · Quellen und Hinweise: siehe App";
   n2.font = { name: "Arial", size: 9, color: { argb: "FF00A050" } };
   let row = 4;
   const latestRows = gas.jahre[ys[ys.length - 1]].rows || [];
@@ -145,7 +145,6 @@ async function buildGasWorkbook(ExcelJS, gas) {
       });
       row++;
     }
-    if (L.hinweis) { const c = ws.getCell(row, 1); c.value = L.hinweis.slice(0, 300); c.font = { name: "Arial", italic: true, size: 8, color: { argb: "FF5B6B7A" } }; row++; }
     row++;
   });
   return wb.xlsx.writeBuffer();
