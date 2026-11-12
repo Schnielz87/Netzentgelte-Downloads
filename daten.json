@@ -1,5 +1,5 @@
 {
- "aktualisiert": "2026-11-12T16:00:00Z",
+ "aktualisiert": "2026-11-12T18:00:00Z",
  "jahre": {
   "2027": {
    "meta": {
@@ -3930,11 +3930,11 @@
   "jahre": {
    "2027": {
     "meta": {
-     "geprueft": "2026-11-12T16:00:00Z",
+     "geprueft": "2026-11-12T18:00:00Z",
      "geprueft_text": "12.11.2026",
      "aenderungen": [
-      "Gas 2027: 21 von 32 Netzbetreibern eingetragen (davon EnTro aus Ihrer Übersicht, alle übrigen aus den offiziellen vorläufigen Preisblättern).",
-      "Offen: Regionalwerk Bodensee Netze, inetz GmbH, Stadtwerke Konstanz, Schleswig-Holstein Netz, EWR GmbH, e.wa riss Netze GmbH, Netze Calw, FairNetz GmbH, Netze Gesellschaft Südwest mbH, (SWE) Gasversorgung Malsch-Durmersheim, Stadtwerke Balingen."
+      "Gas 2027: 31 von 32 Netzbetreibern aus den offiziellen vorläufigen Preisblättern eingetragen.",
+      "Offen: Schleswig-Holstein Netz (Website blockiert automatische Abrufe)."
      ]
     },
     "rows": [
@@ -4150,7 +4150,7 @@
      {
       "nr": 3,
       "bez": "EnTro",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "Energieversorgung Trossingen GmbH (EnTro)",
       "vnb": "701048",
       "typ": "sockel",
       "stufen": [
@@ -4222,20 +4222,18 @@
         "messung": null
        }
       ],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
-      "stand": "vorläufig · Werte aus Ihrer Gas-Übersicht (Pflege NNE)",
-      "hinweis": "Werte aus Ihrer Übersicht übernommen; das offizielle Preisblatt von EnTro war automatisch nicht auffindbar (Website nicht erreichbar) – Abgleich und Link folgen mit der nächsten Gas-Recherche.",
-      "flags": [
-       "stand"
-      ],
+      "q_nne": "https://www.swtro.de/wp-content/uploads/2026/10/2027_PB_GasNN_aggregiert_vorlaeufig_16-10-26-1.pdf (2. Kunden ohne Leistungsmessung; 3. MSB; 4. Messung)",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.swtro.de/",
+      "stand": "vorläufig · Stand 15.10.2026 · gültig ab 01.01.2027",
+      "hinweis": "Sockelmodell; Werte aus dem offiziellen vorläufigen Preisblatt 2027 – identisch mit Ihrer Übersicht. Messung jährlich 4,66 €/a. Weitere Zähler: größer G100 634,00 €/a.",
+      "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
       "update": {
        "datum": "12.11.2026",
-       "text": "Werte 2027 eingetragen (aus Ihrer Übersicht)."
+       "text": "Gegen das offizielle Preisblatt 2027 geprüft – Werte identisch mit Ihrer Übersicht."
       }
      },
      {
@@ -4423,64 +4421,105 @@
      {
       "nr": 6,
       "bez": "Regionalwerk Bodensee Netze",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "Regionalwerk Bodensee Netze GmbH & Co. KG",
       "vnb": "701129",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "0–5.000",
+        "ap": 2.428,
+        "gp": 3.63,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 2,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "5.001–50.000",
+        "ap": 1.553,
+        "gp": 60.13,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 3,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "50.001–300.000",
+        "ap": 1.445,
+        "gp": 241.12,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 4,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "300.001–1.000.000",
+        "ap": 1.226,
+        "gp": 1239.72,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 5,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "1.000.001–1.500.000",
+        "ap": 0.831,
+        "gp": 5049.04,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
-      "stand": "offen · Prüfstand 12.11.2026",
-      "hinweis": "Das Gas-Preisblatt 2027 konnte am 12.11.2026 nicht automatisch abgerufen werden (Website nicht erreichbar, blockiert oder Preisblatt nicht auffindbar). Wird bei der nächsten Recherche erneut gesucht.",
+      "zaehler": [
+       {
+        "zg": "G4",
+        "msb": 10.7,
+        "messung": 4.5
+       },
+       {
+        "zg": "G6",
+        "msb": 12.96,
+        "messung": null
+       },
+       {
+        "zg": "G10",
+        "msb": 35.15,
+        "messung": null
+       },
+       {
+        "zg": "G16",
+        "msb": 35.69,
+        "messung": null
+       },
+       {
+        "zg": "G25",
+        "msb": 39.51,
+        "messung": null
+       },
+       {
+        "zg": "G40",
+        "msb": 185.38,
+        "messung": null
+       },
+       {
+        "zg": "G65",
+        "msb": 255.01,
+        "messung": null
+       },
+       {
+        "zg": "G100",
+        "msb": 255.01,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.rw-bodensee.de/fileadmin/user_upload/Documents/2-Netze/3-Gasnetz/Preisblaetter/Gas-Netznutzung-Preisblatt-2027.pdf (S. 1 SLP; S. 2 Messpreise SLP)",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.rw-bodensee.de/",
+      "stand": "vorläufig · Stand 14.10.2026 · gültig ab 01.01.2027",
+      "hinweis": "Messung jährliche Ablesung 4,50 €/a.",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
       "update": {
        "datum": "12.11.2026",
-       "text": "Gas-Preisblatt 2027 automatisch nicht gefunden bzw. Website nicht erreichbar."
+       "text": "Werte 2027 aus dem offiziellen vorläufigen Preisblatt eingetragen."
       }
      },
      {
@@ -4726,135 +4765,185 @@
      {
       "nr": 10,
       "bez": "inetz GmbH",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "inetz GmbH",
       "vnb": "700471",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "0–5.000",
+        "ap": 2.8073,
+        "gp": 33.0,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 2,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "5.001–15.000",
+        "ap": 2.6323,
+        "gp": 51.0,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 3,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "15.001–37.000",
+        "ap": 2.3649,
+        "gp": 100.2,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 4,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "37.001–55.000",
+        "ap": 2.3328,
+        "gp": 118.2,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 5,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "55.001–150.000",
+        "ap": 2.2499,
+        "gp": 166.2,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 6,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "150.001–1.500.000",
+        "ap": 2.2492,
+        "gp": 171.0,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
-      "stand": "offen · Prüfstand 12.11.2026",
-      "hinweis": "Das Gas-Preisblatt 2027 konnte am 12.11.2026 nicht automatisch abgerufen werden (Website nicht erreichbar, blockiert oder Preisblatt nicht auffindbar). Wird bei der nächsten Recherche erneut gesucht.",
+      "zaehler": [
+       {
+        "zg": "G2,5–G6",
+        "msb": 28.7,
+        "messung": null
+       },
+       {
+        "zg": "G10–G25",
+        "msb": 57.5,
+        "messung": null
+       },
+       {
+        "zg": "ab G40",
+        "msb": 332.4,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.inetz.de/fileadmin/user_upload/inetz_G_vorlaeufiges_Preisblatt_2027.pdf (1. SLP; 3. Messung und Messstellenbetrieb)",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.inetz.de/startseite/netzzugang/netzentgelte/",
+      "stand": "vorläufig · Stand 08.10.2026 · voraussichtlich gültig ab 01.01.2027",
+      "hinweis": "Inkl. vorgelagerter Netze. Die MSB-Werte enthalten bereits die jährliche Messung (inetz weist Messung und Messstellenbetrieb gemeinsam aus).",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
       "update": {
        "datum": "12.11.2026",
-       "text": "Gas-Preisblatt 2027 automatisch nicht gefunden bzw. Website nicht erreichbar."
+       "text": "Werte 2027 aus dem offiziellen vorläufigen Preisblatt eingetragen."
       }
      },
      {
       "nr": 11,
       "bez": "Stadtwerke Konstanz",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "Stadtwerke Konstanz GmbH",
       "vnb": "700936",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "0–1.000",
+        "ap": 6.2625,
+        "gp": 20.0,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 2,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "1.001–4.000",
+        "ap": 3.2625,
+        "gp": 50.0,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 3,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "4.001–50.000",
+        "ap": 1.7625,
+        "gp": 110.0,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 4,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "50.001–300.000",
+        "ap": 1.5425,
+        "gp": 220.0,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 5,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "300.001–1.000.000",
+        "ap": 1.2592,
+        "gp": 1070.0,
+        "sockel": null,
+        "sockel_kwh": null
+       },
+       {
+        "stufe": 6,
+        "verbrauch": "ab 1.000.001",
+        "ap": 1.1582,
+        "gp": 2080.0,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
-      "stand": "offen · Prüfstand 12.11.2026",
-      "hinweis": "Das Gas-Preisblatt 2027 konnte am 12.11.2026 nicht automatisch abgerufen werden (Website nicht erreichbar, blockiert oder Preisblatt nicht auffindbar). Wird bei der nächsten Recherche erneut gesucht.",
+      "zaehler": [
+       {
+        "zg": "G4–G6",
+        "msb": 27.0,
+        "messung": 16.0
+       },
+       {
+        "zg": "G10–G16",
+        "msb": 42.0,
+        "messung": null
+       },
+       {
+        "zg": "G25–G40",
+        "msb": 68.0,
+        "messung": null
+       },
+       {
+        "zg": "G65",
+        "msb": 333.0,
+        "messung": null
+       },
+       {
+        "zg": "G100",
+        "msb": 403.0,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.enwg-veroeffentlichungen.de/konstanz/Netze/Gasnetz/Netzzugang-Entgelte-/SWK-NNE-Gas-2027-vorl-gesch.xlsx (Excel; Preisblatt 1 SLP; Preisblatt 3 MSB/Messung)",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.enwg-veroeffentlichungen.de/konstanz/Netze/",
+      "stand": "vorläufig · Stand 10.10.2026 · gültig ab 01.01.2027",
+      "hinweis": "Preisblatt wird als Excel veröffentlicht. 6 Stufen (Ihre Liste: 5). Messung jährlich 16,00 €/a (Balgengaszähler-MSB).",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
       "update": {
        "datum": "12.11.2026",
-       "text": "Gas-Preisblatt 2027 automatisch nicht gefunden bzw. Website nicht erreichbar."
+       "text": "Werte 2027 aus dem offiziellen vorläufigen Preisblatt eingetragen (6 Stufen statt 5 laut Ihrer Liste)."
       }
      },
      {
@@ -5780,80 +5869,96 @@
      {
       "nr": 22,
       "bez": "EWR GmbH",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "EWR GmbH (Remscheid)",
       "vnb": "700822",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "1–2.000",
+        "ap": 2.7113,
+        "gp": 18.48,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 2,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "2.001–5.000",
+        "ap": 2.3933,
+        "gp": 24.84,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 3,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "5.001–50.000",
+        "ap": 1.7501,
+        "gp": 57.0,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 4,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "50.001–250.000",
+        "ap": 1.673,
+        "gp": 95.52,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 5,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "250.001–500.000",
+        "ap": 1.6678,
+        "gp": 108.6,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 6,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "500.001–1.000.000",
+        "ap": 1.6614,
+        "gp": 140.52,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 7,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "1.000.001–1.500.000",
+        "ap": 1.655,
+        "gp": 204.72,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
-      "stand": "offen · Prüfstand 12.11.2026",
-      "hinweis": "Das Gas-Preisblatt 2027 konnte am 12.11.2026 nicht automatisch abgerufen werden (Website nicht erreichbar, blockiert oder Preisblatt nicht auffindbar). Wird bei der nächsten Recherche erneut gesucht.",
+      "zaehler": [
+       {
+        "zg": "G4–G6",
+        "msb": 13.2,
+        "messung": 3.5
+       },
+       {
+        "zg": "G10–G25",
+        "msb": 32.4,
+        "messung": null
+       },
+       {
+        "zg": "G40–G100",
+        "msb": 178.8,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.ewr-netze-remscheid.de/de/Netze-Versorgung/Gasnetz/Netzzugang-Entgelte/Netznutzungsentgelte/vorlaeufige-Netzentgelte-Gas-2027.pdf",
+      "q_msb": "https://www.ewr-netze-remscheid.de/de/MSB/Gas/Messentgelte-und-Vertraege/Gas-Messentgelte-2027.pdf (Bild-PDF, visuell gelesen)",
+      "seite": "https://www.ewr-netze-remscheid.de/",
+      "stand": "vorläufig · gültig ab 01.01.2027",
+      "hinweis": "Messung SLP 1x pro Jahr 3,50 €.",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
       "update": {
        "datum": "12.11.2026",
-       "text": "Gas-Preisblatt 2027 automatisch nicht gefunden bzw. Website nicht erreichbar."
+       "text": "Werte 2027 aus dem offiziellen vorläufigen Preisblatt eingetragen."
       }
      },
      {
@@ -5987,293 +6092,400 @@
      {
       "nr": 24,
       "bez": "e.wa riss Netze GmbH",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "e.wa riss Netze GmbH",
       "vnb": "700181",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "0–1.000",
+        "ap": 4.227,
+        "gp": 10.0,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 2,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "1.001–4.000",
+        "ap": 2.727,
+        "gp": 25.0,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 3,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "4.001–50.000",
+        "ap": 1.977,
+        "gp": 55.0,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 4,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "50.001–300.000",
+        "ap": 1.837,
+        "gp": 125.0,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 5,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "300.001–1.000.000",
+        "ap": 1.712,
+        "gp": 500.0,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 6,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "1.000.001–1.500.000",
+        "ap": 1.537,
+        "gp": 2250.0,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
-      "stand": "offen · Prüfstand 12.11.2026",
-      "hinweis": "Das Gas-Preisblatt 2027 konnte am 12.11.2026 nicht automatisch abgerufen werden (Website nicht erreichbar, blockiert oder Preisblatt nicht auffindbar). Wird bei der nächsten Recherche erneut gesucht.",
+      "zaehler": [
+       {
+        "zg": "G4",
+        "msb": 7.16,
+        "messung": 2.5
+       },
+       {
+        "zg": "G6",
+        "msb": 9.24,
+        "messung": null
+       },
+       {
+        "zg": "G10",
+        "msb": 11.55,
+        "messung": null
+       },
+       {
+        "zg": "G16",
+        "msb": 13.16,
+        "messung": null
+       },
+       {
+        "zg": "G25",
+        "msb": 14.32,
+        "messung": null
+       },
+       {
+        "zg": "G40",
+        "msb": 64.67,
+        "messung": null
+       },
+       {
+        "zg": "G65",
+        "msb": 76.21,
+        "messung": null
+       },
+       {
+        "zg": "G100",
+        "msb": 80.83,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.ewa-netze.de/de/Netzbetrieb/Veroeffentlichungspflichten1/Gasnetz/Netzzugang-Entgelte-/Vorlaeufiges-Preisblatt-Netzentgelte-Gas-2027-zum-14.10.2026.pdf (Tabelle 4 SLP; Tabelle 5 MSB)",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.ewa-netze.de/",
+      "stand": "vorläufig · Stand 14.10.2026 · ab 01.01.2027",
+      "hinweis": "Inkl. Kostenwälzung vorgelagertes Netz (terranets bw). Messung jährliche Ablesung 2,50 €/a.",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
       "update": {
        "datum": "12.11.2026",
-       "text": "Gas-Preisblatt 2027 automatisch nicht gefunden bzw. Website nicht erreichbar."
+       "text": "Werte 2027 aus dem offiziellen vorläufigen Preisblatt eingetragen."
       }
      },
      {
       "nr": 25,
       "bez": "Netze Calw",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "Netze Calw GmbH",
       "vnb": "",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "0–10.000",
+        "ap": 3.8908,
+        "gp": 6.0,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 2,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "10.001–25.000",
+        "ap": 3.8308,
+        "gp": 12.0,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 3,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "25.001–50.000",
+        "ap": 3.7588,
+        "gp": 30.0,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 4,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "50.001–100.000",
+        "ap": 3.6388,
+        "gp": 90.0,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 5,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "100.001–250.000",
+        "ap": 3.5488,
+        "gp": 180.0,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 6,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "250.001–500.000",
+        "ap": 3.4288,
+        "gp": 480.0,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 7,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "500.001–1.500.000",
+        "ap": 3.2848,
+        "gp": 1200.0,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
-      "stand": "offen · Prüfstand 12.11.2026",
-      "hinweis": "Das Gas-Preisblatt 2027 konnte am 12.11.2026 nicht automatisch abgerufen werden (Website nicht erreichbar, blockiert oder Preisblatt nicht auffindbar). Wird bei der nächsten Recherche erneut gesucht.",
+      "zaehler": [
+       {
+        "zg": "G4–G10",
+        "msb": 10.4,
+        "messung": 2.1
+       },
+       {
+        "zg": "G16–G40",
+        "msb": 10.4,
+        "messung": null
+       },
+       {
+        "zg": "G65–G250",
+        "msb": 469.8,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://netze-calw.de/wp-content/uploads/2026/10/vorl.-Preisblatt-Gasnetz-Netze-Calw-GmbH-ab-01.01.2027.pdf (1.1 SLP; 2. MSB/Messung)",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.netze-calw.de/",
+      "stand": "vorläufig · gültig ab 01.01.2027",
+      "hinweis": "Messung jährlich 2,10 €/a. Smart-Meter-Zuschlag 169,50 €/a.",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
       "update": {
        "datum": "12.11.2026",
-       "text": "Gas-Preisblatt 2027 automatisch nicht gefunden bzw. Website nicht erreichbar."
+       "text": "Werte 2027 aus dem offiziellen vorläufigen Preisblatt eingetragen."
       }
      },
      {
       "nr": 26,
       "bez": "FairNetz GmbH",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "FairNetz GmbH",
       "vnb": "700121",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "1–1.000",
+        "ap": 3.8671,
+        "gp": 0.0,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 2,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "1.001–4.000",
+        "ap": 2.8671,
+        "gp": 10.0,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 3,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "4.001–50.000",
+        "ap": 2.3671,
+        "gp": 30.0,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 4,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "50.001–300.000",
+        "ap": 2.2271,
+        "gp": 100.0,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 5,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "300.001–1.000.000",
+        "ap": 2.1771,
+        "gp": 250.0,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 6,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "1.000.001–1.500.000",
+        "ap": 2.1671,
+        "gp": 350.0,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
-      "stand": "offen · Prüfstand 12.11.2026",
-      "hinweis": "Das Gas-Preisblatt 2027 konnte am 12.11.2026 nicht automatisch abgerufen werden (Website nicht erreichbar, blockiert oder Preisblatt nicht auffindbar). Wird bei der nächsten Recherche erneut gesucht.",
+      "zaehler": [
+       {
+        "zg": "G4/G6",
+        "msb": 27.59,
+        "messung": 4.4
+       },
+       {
+        "zg": "G10",
+        "msb": 46.99,
+        "messung": null
+       },
+       {
+        "zg": "G16/G25",
+        "msb": 83.4,
+        "messung": null
+       },
+       {
+        "zg": "G40/G65",
+        "msb": 244.73,
+        "messung": null
+       },
+       {
+        "zg": "G100",
+        "msb": 305.28,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.fairnetzgmbh.de/Downloads/PDF/Gas/Preise/2027/vorl%C3%A4ufiges%20Preisblatt%20_Gas%20Netznutzung_01.01.2027.pdf",
+      "q_msb": "https://www.fairnetzgmbh.de/Downloads/PDF/Gas/Preise/2027/vorl%C3%A4ufiges%20Preisblatt_Gas%20Messung_01.2027.pdf",
+      "seite": "https://www.fairnetzgmbh.de/de/veroeffentlichungen/downloads",
+      "stand": "vorläufig · Stand 06.10.2026 · gültig ab 01.01.2027",
+      "hinweis": "Messung jährlich 4,40 €/a.",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
       "update": {
        "datum": "12.11.2026",
-       "text": "Gas-Preisblatt 2027 automatisch nicht gefunden bzw. Website nicht erreichbar."
+       "text": "Werte 2027 aus dem offiziellen vorläufigen Preisblatt eingetragen."
       }
      },
      {
       "nr": 27,
       "bez": "Netze Gesellschaft Südwest mbH",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "Netze-Gesellschaft Südwest mbH",
       "vnb": "700826",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "0–10.000",
+        "ap": 2.5604,
+        "gp": 18.0,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 2,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "10.001–20.000",
+        "ap": 2.5603,
+        "gp": 18.01,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 3,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "20.001–100.000",
+        "ap": 2.5591,
+        "gp": 18.23,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 4,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "100.001–250.000",
+        "ap": 2.5547,
+        "gp": 22.63,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 5,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "250.001–500.000",
+        "ap": 2.543,
+        "gp": 51.88,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 6,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "500.001–1.000.000",
+        "ap": 2.5123,
+        "gp": 205.38,
+        "sockel": null,
+        "sockel_kwh": null
+       },
+       {
+        "stufe": 7,
+        "verbrauch": "1.000.001–1.500.000",
+        "ap": 2.4601,
+        "gp": 727.38,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
-      "stand": "offen · Prüfstand 12.11.2026",
-      "hinweis": "Das Gas-Preisblatt 2027 konnte am 12.11.2026 nicht automatisch abgerufen werden (Website nicht erreichbar, blockiert oder Preisblatt nicht auffindbar). Wird bei der nächsten Recherche erneut gesucht.",
+      "zaehler": [
+       {
+        "zg": "G2,5–G6",
+        "msb": 39.0,
+        "messung": 10.3
+       },
+       {
+        "zg": "G10–G25",
+        "msb": 67.0,
+        "messung": null
+       },
+       {
+        "zg": "G40–G100",
+        "msb": 192.0,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.netze-suedwest.de/_Resources/Persistent/7/f/b/c/7fbc49406e3d0f7f66bcfe2e103e6be8114b6f61/20261006_NGS_vorl%C3%A4ufiges_Preisblatt_2027_V1.pdf (Tabelle 1 SLP, S. 3; Tabelle 4/5 Messung/MSB)",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.netze-suedwest.de/lieferanten",
+      "stand": "vorläufig · Stand Oktober 2026 · gültig 01.01.–31.12.2027",
+      "hinweis": "Preisblatt hat 7 Stufen (Ihre Liste: 6). Messung jährlich 10,30 €/a.",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
       "update": {
        "datum": "12.11.2026",
-       "text": "Gas-Preisblatt 2027 automatisch nicht gefunden bzw. Website nicht erreichbar."
+       "text": "Werte 2027 aus dem offiziellen vorläufigen Preisblatt eingetragen (7 Stufen statt 6 laut Ihrer Liste)."
       }
      },
      {
@@ -6556,151 +6768,183 @@
      {
       "nr": 31,
       "bez": "(SWE) Gasversorgung Malsch-Durmersheim",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "Gasversorgung Malsch-Durmersheim (Netzbetrieb Stadtwerke Ettlingen)",
       "vnb": "700306",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "1–1.000",
+        "ap": 3.9871,
+        "gp": 0.0,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 2,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "1.001–4.000",
+        "ap": 2.4871,
+        "gp": 15.0,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 3,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "4.001–50.000",
+        "ap": 1.8621,
+        "gp": 40.0,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 4,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "50.001–300.000",
+        "ap": 1.7621,
+        "gp": 90.0,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 5,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "300.001–1.000.000",
+        "ap": 1.7421,
+        "gp": 150.0,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 6,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "ab 1.000.001",
+        "ap": 1.7271,
+        "gp": 300.0,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
-      "stand": "offen · Prüfstand 12.11.2026",
-      "hinweis": "Das Gas-Preisblatt 2027 konnte am 12.11.2026 nicht automatisch abgerufen werden (Website nicht erreichbar, blockiert oder Preisblatt nicht auffindbar). Wird bei der nächsten Recherche erneut gesucht.",
+      "zaehler": [
+       {
+        "zg": "G4–G6",
+        "msb": 30.4,
+        "messung": 7.77
+       },
+       {
+        "zg": "G10–G25",
+        "msb": 130.69,
+        "messung": null
+       },
+       {
+        "zg": "G40–G160",
+        "msb": 599.15,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.sw-ettlingen.de/de/Netze1/Erdgasnetz-Malsch-Durmersheim/Netzzugang-Entgelte-/vorlaeufige-Netznutzungsentgelte-GVMD-2027.pdf (SLP; Preisblatt 3 MSB/Messung)",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.sw-ettlingen.de/",
+      "stand": "vorläufig · Stand 10/2026 · gültig ab 01.01.2027",
+      "hinweis": "Messung jährlich 7,77 €/a.",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
       "update": {
        "datum": "12.11.2026",
-       "text": "Gas-Preisblatt 2027 automatisch nicht gefunden bzw. Website nicht erreichbar."
+       "text": "Werte 2027 aus dem offiziellen vorläufigen Preisblatt eingetragen."
       }
      },
      {
       "nr": 32,
       "bez": "Stadtwerke Balingen",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "Stadtwerke Balingen",
       "vnb": "",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "0–2.000",
+        "ap": 3.232,
+        "gp": 8.68,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 2,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "2.001–10.000",
+        "ap": 2.797,
+        "gp": 17.37,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 3,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "10.001–25.000",
+        "ap": 2.537,
+        "gp": 43.42,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 4,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "25.001–50.000",
+        "ap": 2.363,
+        "gp": 86.84,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 5,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "50.001–200.000",
+        "ap": 2.189,
+        "gp": 173.69,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 6,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "200.001–500.000",
+        "ap": 2.059,
+        "gp": 434.22,
         "sockel": null,
         "sockel_kwh": null
        },
        {
         "stufe": 7,
-        "verbrauch": "",
-        "ap": null,
-        "gp": null,
+        "verbrauch": "500.001–1.500.000",
+        "ap": 1.929,
+        "gp": 1085.56,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
-      "stand": "offen · Prüfstand 12.11.2026",
-      "hinweis": "Das Gas-Preisblatt 2027 konnte am 12.11.2026 nicht automatisch abgerufen werden (Website nicht erreichbar, blockiert oder Preisblatt nicht auffindbar). Wird bei der nächsten Recherche erneut gesucht.",
+      "zaehler": [
+       {
+        "zg": "bis G6",
+        "msb": 13.53,
+        "messung": 6.28
+       },
+       {
+        "zg": "G10–G25",
+        "msb": 34.44,
+        "messung": null
+       },
+       {
+        "zg": "G40–G100",
+        "msb": 190.0,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.stadtwerke.balingen.de/balingenGips/Balingen/EnWGTool/Gasnetz/Vertraege_und_Verfahren/Netzentgelte/Vorlaeufiges-Preisblatt-Netzentgelte-Gas-ab-1.1.27.pdf",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.stadtwerke.balingen.de/balingenGips/Gips?SessionMandant=Balingen&Anwendung=EnWGKnotenAnzeigen&PrimaryId=3013&Mandantkuerzel=Balingen&Navigation=J",
+      "stand": "vorläufig · Veröffentlichung 15.10.2026 · gültig ab 01.01.2027",
+      "hinweis": "Messung jährlich 6,28 €/a.",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
       "update": {
        "datum": "12.11.2026",
-       "text": "Gas-Preisblatt 2027 automatisch nicht gefunden bzw. Website nicht erreichbar."
+       "text": "Werte 2027 aus dem offiziellen vorläufigen Preisblatt eingetragen."
       }
      }
     ]
@@ -7194,13 +7438,13 @@
      {
       "nr": 6,
       "bez": "Regionalwerk Bodensee Netze",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "Regionalwerk Bodensee Netze GmbH & Co. KG",
       "vnb": "701129",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "0–5.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -7208,7 +7452,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "5.001–50.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -7216,7 +7460,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "50.001–300.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -7224,7 +7468,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "300.001–1.000.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -7232,27 +7476,65 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "1.000.001–1.500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "G4",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G6",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G10",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G16",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G25",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G40",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G65",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G100",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.rw-bodensee.de/fileadmin/user_upload/Documents/2-Netze/3-Gasnetz/Preisblaetter/Gas-Netznutzung-Preisblatt-2027.pdf (S. 1 SLP; S. 2 Messpreise SLP)",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.rw-bodensee.de/",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2027",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      },
      {
       "nr": 7,
@@ -7488,13 +7770,13 @@
      {
       "nr": 10,
       "bez": "inetz GmbH",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "inetz GmbH",
       "vnb": "700471",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "0–5.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -7502,7 +7784,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "5.001–15.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -7510,7 +7792,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "15.001–37.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -7518,7 +7800,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "37.001–55.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -7526,7 +7808,7 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "55.001–150.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -7534,38 +7816,51 @@
        },
        {
         "stufe": 6,
-        "verbrauch": "",
+        "verbrauch": "150.001–1.500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "G2,5–G6",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G10–G25",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "ab G40",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.inetz.de/fileadmin/user_upload/inetz_G_vorlaeufiges_Preisblatt_2027.pdf (1. SLP; 3. Messung und Messstellenbetrieb)",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.inetz.de/startseite/netzzugang/netzentgelte/",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2027",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      },
      {
       "nr": 11,
       "bez": "Stadtwerke Konstanz",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "Stadtwerke Konstanz GmbH",
       "vnb": "700936",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "0–1.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -7573,7 +7868,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "1.001–4.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -7581,7 +7876,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "4.001–50.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -7589,7 +7884,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "50.001–300.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -7597,27 +7892,58 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "300.001–1.000.000",
+        "ap": null,
+        "gp": null,
+        "sockel": null,
+        "sockel_kwh": null
+       },
+       {
+        "stufe": 6,
+        "verbrauch": "ab 1.000.001",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "G4–G6",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G10–G16",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G25–G40",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G65",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G100",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.enwg-veroeffentlichungen.de/konstanz/Netze/Gasnetz/Netzzugang-Entgelte-/SWK-NNE-Gas-2027-vorl-gesch.xlsx (Excel; Preisblatt 1 SLP; Preisblatt 3 MSB/Messung)",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.enwg-veroeffentlichungen.de/konstanz/Netze/",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2027",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      },
      {
       "nr": 12,
@@ -8515,13 +8841,13 @@
      {
       "nr": 22,
       "bez": "EWR GmbH",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "EWR GmbH (Remscheid)",
       "vnb": "700822",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "1–2.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -8529,7 +8855,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "2.001–5.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -8537,7 +8863,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "5.001–50.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -8545,7 +8871,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "50.001–250.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -8553,7 +8879,7 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "250.001–500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -8561,7 +8887,7 @@
        },
        {
         "stufe": 6,
-        "verbrauch": "",
+        "verbrauch": "500.001–1.000.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -8569,27 +8895,40 @@
        },
        {
         "stufe": 7,
-        "verbrauch": "",
+        "verbrauch": "1.000.001–1.500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "G4–G6",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G10–G25",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G40–G100",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.ewr-netze-remscheid.de/de/Netze-Versorgung/Gasnetz/Netzzugang-Entgelte/Netznutzungsentgelte/vorlaeufige-Netzentgelte-Gas-2027.pdf",
+      "q_msb": "https://www.ewr-netze-remscheid.de/de/MSB/Gas/Messentgelte-und-Vertraege/Gas-Messentgelte-2027.pdf (Bild-PDF, visuell gelesen)",
+      "seite": "https://www.ewr-netze-remscheid.de/",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2027",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      },
      {
       "nr": 23,
@@ -8719,13 +9058,13 @@
      {
       "nr": 24,
       "bez": "e.wa riss Netze GmbH",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "e.wa riss Netze GmbH",
       "vnb": "700181",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "0–1.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -8733,7 +9072,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "1.001–4.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -8741,7 +9080,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "4.001–50.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -8749,7 +9088,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "50.001–300.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -8757,7 +9096,7 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "300.001–1.000.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -8765,38 +9104,76 @@
        },
        {
         "stufe": 6,
-        "verbrauch": "",
+        "verbrauch": "1.000.001–1.500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "G4",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G6",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G10",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G16",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G25",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G40",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G65",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G100",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.ewa-netze.de/de/Netzbetrieb/Veroeffentlichungspflichten1/Gasnetz/Netzzugang-Entgelte-/Vorlaeufiges-Preisblatt-Netzentgelte-Gas-2027-zum-14.10.2026.pdf (Tabelle 4 SLP; Tabelle 5 MSB)",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.ewa-netze.de/",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2027",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      },
      {
       "nr": 25,
       "bez": "Netze Calw",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "Netze Calw GmbH",
       "vnb": "",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "0–10.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -8804,7 +9181,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "10.001–25.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -8812,7 +9189,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "25.001–50.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -8820,7 +9197,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "50.001–100.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -8828,7 +9205,7 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "100.001–250.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -8836,7 +9213,7 @@
        },
        {
         "stufe": 6,
-        "verbrauch": "",
+        "verbrauch": "250.001–500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -8844,38 +9221,51 @@
        },
        {
         "stufe": 7,
-        "verbrauch": "",
+        "verbrauch": "500.001–1.500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "G4–G10",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G16–G40",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G65–G250",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://netze-calw.de/wp-content/uploads/2026/10/vorl.-Preisblatt-Gasnetz-Netze-Calw-GmbH-ab-01.01.2027.pdf (1.1 SLP; 2. MSB/Messung)",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.netze-calw.de/",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2027",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      },
      {
       "nr": 26,
       "bez": "FairNetz GmbH",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "FairNetz GmbH",
       "vnb": "700121",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "1–1.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -8883,7 +9273,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "1.001–4.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -8891,7 +9281,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "4.001–50.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -8899,7 +9289,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "50.001–300.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -8907,7 +9297,7 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "300.001–1.000.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -8915,38 +9305,61 @@
        },
        {
         "stufe": 6,
-        "verbrauch": "",
+        "verbrauch": "1.000.001–1.500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "G4/G6",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G10",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G16/G25",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G40/G65",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G100",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.fairnetzgmbh.de/Downloads/PDF/Gas/Preise/2027/vorl%C3%A4ufiges%20Preisblatt%20_Gas%20Netznutzung_01.01.2027.pdf",
+      "q_msb": "https://www.fairnetzgmbh.de/Downloads/PDF/Gas/Preise/2027/vorl%C3%A4ufiges%20Preisblatt_Gas%20Messung_01.2027.pdf",
+      "seite": "https://www.fairnetzgmbh.de/de/veroeffentlichungen/downloads",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2027",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      },
      {
       "nr": 27,
       "bez": "Netze Gesellschaft Südwest mbH",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "Netze-Gesellschaft Südwest mbH",
       "vnb": "700826",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "0–10.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -8954,7 +9367,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "10.001–20.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -8962,7 +9375,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "20.001–100.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -8970,7 +9383,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "100.001–250.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -8978,7 +9391,7 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "250.001–500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -8986,27 +9399,48 @@
        },
        {
         "stufe": 6,
-        "verbrauch": "",
+        "verbrauch": "500.001–1.000.000",
+        "ap": null,
+        "gp": null,
+        "sockel": null,
+        "sockel_kwh": null
+       },
+       {
+        "stufe": 7,
+        "verbrauch": "1.000.001–1.500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "G2,5–G6",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G10–G25",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G40–G100",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.netze-suedwest.de/_Resources/Persistent/7/f/b/c/7fbc49406e3d0f7f66bcfe2e103e6be8114b6f61/20261006_NGS_vorl%C3%A4ufiges_Preisblatt_2027_V1.pdf (Tabelle 1 SLP, S. 3; Tabelle 4/5 Messung/MSB)",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.netze-suedwest.de/lieferanten",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2027",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      },
      {
       "nr": 28,
@@ -9279,13 +9713,13 @@
      {
       "nr": 31,
       "bez": "(SWE) Gasversorgung Malsch-Durmersheim",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "Gasversorgung Malsch-Durmersheim (Netzbetrieb Stadtwerke Ettlingen)",
       "vnb": "700306",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "1–1.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -9293,7 +9727,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "1.001–4.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -9301,7 +9735,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "4.001–50.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -9309,7 +9743,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "50.001–300.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -9317,7 +9751,7 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "300.001–1.000.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -9325,38 +9759,51 @@
        },
        {
         "stufe": 6,
-        "verbrauch": "",
+        "verbrauch": "ab 1.000.001",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "G4–G6",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G10–G25",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G40–G160",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.sw-ettlingen.de/de/Netze1/Erdgasnetz-Malsch-Durmersheim/Netzzugang-Entgelte-/vorlaeufige-Netznutzungsentgelte-GVMD-2027.pdf (SLP; Preisblatt 3 MSB/Messung)",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.sw-ettlingen.de/",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2027",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      },
      {
       "nr": 32,
       "bez": "Stadtwerke Balingen",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "Stadtwerke Balingen",
       "vnb": "",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "0–2.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -9364,7 +9811,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "2.001–10.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -9372,7 +9819,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "10.001–25.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -9380,7 +9827,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "25.001–50.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -9388,7 +9835,7 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "50.001–200.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -9396,7 +9843,7 @@
        },
        {
         "stufe": 6,
-        "verbrauch": "",
+        "verbrauch": "200.001–500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -9404,27 +9851,40 @@
        },
        {
         "stufe": 7,
-        "verbrauch": "",
+        "verbrauch": "500.001–1.500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "bis G6",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G10–G25",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G40–G100",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.stadtwerke.balingen.de/balingenGips/Balingen/EnWGTool/Gasnetz/Vertraege_und_Verfahren/Netzentgelte/Vorlaeufiges-Preisblatt-Netzentgelte-Gas-ab-1.1.27.pdf",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.stadtwerke.balingen.de/balingenGips/Gips?SessionMandant=Balingen&Anwendung=EnWGKnotenAnzeigen&PrimaryId=3013&Mandantkuerzel=Balingen&Navigation=J",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2027",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      }
     ]
    },
@@ -9917,13 +10377,13 @@
      {
       "nr": 6,
       "bez": "Regionalwerk Bodensee Netze",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "Regionalwerk Bodensee Netze GmbH & Co. KG",
       "vnb": "701129",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "0–5.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -9931,7 +10391,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "5.001–50.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -9939,7 +10399,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "50.001–300.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -9947,7 +10407,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "300.001–1.000.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -9955,27 +10415,65 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "1.000.001–1.500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "G4",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G6",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G10",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G16",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G25",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G40",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G65",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G100",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.rw-bodensee.de/fileadmin/user_upload/Documents/2-Netze/3-Gasnetz/Preisblaetter/Gas-Netznutzung-Preisblatt-2027.pdf (S. 1 SLP; S. 2 Messpreise SLP)",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.rw-bodensee.de/",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2028",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      },
      {
       "nr": 7,
@@ -10211,13 +10709,13 @@
      {
       "nr": 10,
       "bez": "inetz GmbH",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "inetz GmbH",
       "vnb": "700471",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "0–5.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -10225,7 +10723,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "5.001–15.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -10233,7 +10731,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "15.001–37.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -10241,7 +10739,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "37.001–55.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -10249,7 +10747,7 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "55.001–150.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -10257,38 +10755,51 @@
        },
        {
         "stufe": 6,
-        "verbrauch": "",
+        "verbrauch": "150.001–1.500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "G2,5–G6",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G10–G25",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "ab G40",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.inetz.de/fileadmin/user_upload/inetz_G_vorlaeufiges_Preisblatt_2027.pdf (1. SLP; 3. Messung und Messstellenbetrieb)",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.inetz.de/startseite/netzzugang/netzentgelte/",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2028",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      },
      {
       "nr": 11,
       "bez": "Stadtwerke Konstanz",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "Stadtwerke Konstanz GmbH",
       "vnb": "700936",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "0–1.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -10296,7 +10807,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "1.001–4.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -10304,7 +10815,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "4.001–50.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -10312,7 +10823,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "50.001–300.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -10320,27 +10831,58 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "300.001–1.000.000",
+        "ap": null,
+        "gp": null,
+        "sockel": null,
+        "sockel_kwh": null
+       },
+       {
+        "stufe": 6,
+        "verbrauch": "ab 1.000.001",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "G4–G6",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G10–G16",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G25–G40",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G65",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G100",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.enwg-veroeffentlichungen.de/konstanz/Netze/Gasnetz/Netzzugang-Entgelte-/SWK-NNE-Gas-2027-vorl-gesch.xlsx (Excel; Preisblatt 1 SLP; Preisblatt 3 MSB/Messung)",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.enwg-veroeffentlichungen.de/konstanz/Netze/",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2028",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      },
      {
       "nr": 12,
@@ -11238,13 +11780,13 @@
      {
       "nr": 22,
       "bez": "EWR GmbH",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "EWR GmbH (Remscheid)",
       "vnb": "700822",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "1–2.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -11252,7 +11794,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "2.001–5.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -11260,7 +11802,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "5.001–50.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -11268,7 +11810,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "50.001–250.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -11276,7 +11818,7 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "250.001–500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -11284,7 +11826,7 @@
        },
        {
         "stufe": 6,
-        "verbrauch": "",
+        "verbrauch": "500.001–1.000.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -11292,27 +11834,40 @@
        },
        {
         "stufe": 7,
-        "verbrauch": "",
+        "verbrauch": "1.000.001–1.500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "G4–G6",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G10–G25",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G40–G100",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.ewr-netze-remscheid.de/de/Netze-Versorgung/Gasnetz/Netzzugang-Entgelte/Netznutzungsentgelte/vorlaeufige-Netzentgelte-Gas-2027.pdf",
+      "q_msb": "https://www.ewr-netze-remscheid.de/de/MSB/Gas/Messentgelte-und-Vertraege/Gas-Messentgelte-2027.pdf (Bild-PDF, visuell gelesen)",
+      "seite": "https://www.ewr-netze-remscheid.de/",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2028",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      },
      {
       "nr": 23,
@@ -11442,13 +11997,13 @@
      {
       "nr": 24,
       "bez": "e.wa riss Netze GmbH",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "e.wa riss Netze GmbH",
       "vnb": "700181",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "0–1.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -11456,7 +12011,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "1.001–4.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -11464,7 +12019,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "4.001–50.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -11472,7 +12027,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "50.001–300.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -11480,7 +12035,7 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "300.001–1.000.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -11488,38 +12043,76 @@
        },
        {
         "stufe": 6,
-        "verbrauch": "",
+        "verbrauch": "1.000.001–1.500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "G4",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G6",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G10",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G16",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G25",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G40",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G65",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G100",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.ewa-netze.de/de/Netzbetrieb/Veroeffentlichungspflichten1/Gasnetz/Netzzugang-Entgelte-/Vorlaeufiges-Preisblatt-Netzentgelte-Gas-2027-zum-14.10.2026.pdf (Tabelle 4 SLP; Tabelle 5 MSB)",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.ewa-netze.de/",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2028",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      },
      {
       "nr": 25,
       "bez": "Netze Calw",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "Netze Calw GmbH",
       "vnb": "",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "0–10.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -11527,7 +12120,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "10.001–25.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -11535,7 +12128,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "25.001–50.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -11543,7 +12136,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "50.001–100.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -11551,7 +12144,7 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "100.001–250.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -11559,7 +12152,7 @@
        },
        {
         "stufe": 6,
-        "verbrauch": "",
+        "verbrauch": "250.001–500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -11567,38 +12160,51 @@
        },
        {
         "stufe": 7,
-        "verbrauch": "",
+        "verbrauch": "500.001–1.500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "G4–G10",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G16–G40",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G65–G250",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://netze-calw.de/wp-content/uploads/2026/10/vorl.-Preisblatt-Gasnetz-Netze-Calw-GmbH-ab-01.01.2027.pdf (1.1 SLP; 2. MSB/Messung)",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.netze-calw.de/",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2028",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      },
      {
       "nr": 26,
       "bez": "FairNetz GmbH",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "FairNetz GmbH",
       "vnb": "700121",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "1–1.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -11606,7 +12212,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "1.001–4.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -11614,7 +12220,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "4.001–50.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -11622,7 +12228,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "50.001–300.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -11630,7 +12236,7 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "300.001–1.000.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -11638,38 +12244,61 @@
        },
        {
         "stufe": 6,
-        "verbrauch": "",
+        "verbrauch": "1.000.001–1.500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "G4/G6",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G10",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G16/G25",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G40/G65",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G100",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.fairnetzgmbh.de/Downloads/PDF/Gas/Preise/2027/vorl%C3%A4ufiges%20Preisblatt%20_Gas%20Netznutzung_01.01.2027.pdf",
+      "q_msb": "https://www.fairnetzgmbh.de/Downloads/PDF/Gas/Preise/2027/vorl%C3%A4ufiges%20Preisblatt_Gas%20Messung_01.2027.pdf",
+      "seite": "https://www.fairnetzgmbh.de/de/veroeffentlichungen/downloads",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2028",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      },
      {
       "nr": 27,
       "bez": "Netze Gesellschaft Südwest mbH",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "Netze-Gesellschaft Südwest mbH",
       "vnb": "700826",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "0–10.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -11677,7 +12306,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "10.001–20.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -11685,7 +12314,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "20.001–100.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -11693,7 +12322,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "100.001–250.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -11701,7 +12330,7 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "250.001–500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -11709,27 +12338,48 @@
        },
        {
         "stufe": 6,
-        "verbrauch": "",
+        "verbrauch": "500.001–1.000.000",
+        "ap": null,
+        "gp": null,
+        "sockel": null,
+        "sockel_kwh": null
+       },
+       {
+        "stufe": 7,
+        "verbrauch": "1.000.001–1.500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "G2,5–G6",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G10–G25",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G40–G100",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.netze-suedwest.de/_Resources/Persistent/7/f/b/c/7fbc49406e3d0f7f66bcfe2e103e6be8114b6f61/20261006_NGS_vorl%C3%A4ufiges_Preisblatt_2027_V1.pdf (Tabelle 1 SLP, S. 3; Tabelle 4/5 Messung/MSB)",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.netze-suedwest.de/lieferanten",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2028",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      },
      {
       "nr": 28,
@@ -12002,13 +12652,13 @@
      {
       "nr": 31,
       "bez": "(SWE) Gasversorgung Malsch-Durmersheim",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "Gasversorgung Malsch-Durmersheim (Netzbetrieb Stadtwerke Ettlingen)",
       "vnb": "700306",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "1–1.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -12016,7 +12666,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "1.001–4.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -12024,7 +12674,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "4.001–50.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -12032,7 +12682,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "50.001–300.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -12040,7 +12690,7 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "300.001–1.000.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -12048,38 +12698,51 @@
        },
        {
         "stufe": 6,
-        "verbrauch": "",
+        "verbrauch": "ab 1.000.001",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "G4–G6",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G10–G25",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G40–G160",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.sw-ettlingen.de/de/Netze1/Erdgasnetz-Malsch-Durmersheim/Netzzugang-Entgelte-/vorlaeufige-Netznutzungsentgelte-GVMD-2027.pdf (SLP; Preisblatt 3 MSB/Messung)",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.sw-ettlingen.de/",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2028",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      },
      {
       "nr": 32,
       "bez": "Stadtwerke Balingen",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "Stadtwerke Balingen",
       "vnb": "",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "0–2.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -12087,7 +12750,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "2.001–10.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -12095,7 +12758,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "10.001–25.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -12103,7 +12766,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "25.001–50.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -12111,7 +12774,7 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "50.001–200.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -12119,7 +12782,7 @@
        },
        {
         "stufe": 6,
-        "verbrauch": "",
+        "verbrauch": "200.001–500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -12127,27 +12790,40 @@
        },
        {
         "stufe": 7,
-        "verbrauch": "",
+        "verbrauch": "500.001–1.500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "bis G6",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G10–G25",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G40–G100",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.stadtwerke.balingen.de/balingenGips/Balingen/EnWGTool/Gasnetz/Vertraege_und_Verfahren/Netzentgelte/Vorlaeufiges-Preisblatt-Netzentgelte-Gas-ab-1.1.27.pdf",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.stadtwerke.balingen.de/balingenGips/Gips?SessionMandant=Balingen&Anwendung=EnWGKnotenAnzeigen&PrimaryId=3013&Mandantkuerzel=Balingen&Navigation=J",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2028",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      }
     ]
    },
@@ -12640,13 +13316,13 @@
      {
       "nr": 6,
       "bez": "Regionalwerk Bodensee Netze",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "Regionalwerk Bodensee Netze GmbH & Co. KG",
       "vnb": "701129",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "0–5.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -12654,7 +13330,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "5.001–50.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -12662,7 +13338,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "50.001–300.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -12670,7 +13346,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "300.001–1.000.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -12678,27 +13354,65 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "1.000.001–1.500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "G4",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G6",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G10",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G16",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G25",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G40",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G65",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G100",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.rw-bodensee.de/fileadmin/user_upload/Documents/2-Netze/3-Gasnetz/Preisblaetter/Gas-Netznutzung-Preisblatt-2027.pdf (S. 1 SLP; S. 2 Messpreise SLP)",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.rw-bodensee.de/",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2029",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      },
      {
       "nr": 7,
@@ -12934,13 +13648,13 @@
      {
       "nr": 10,
       "bez": "inetz GmbH",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "inetz GmbH",
       "vnb": "700471",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "0–5.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -12948,7 +13662,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "5.001–15.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -12956,7 +13670,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "15.001–37.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -12964,7 +13678,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "37.001–55.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -12972,7 +13686,7 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "55.001–150.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -12980,38 +13694,51 @@
        },
        {
         "stufe": 6,
-        "verbrauch": "",
+        "verbrauch": "150.001–1.500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "G2,5–G6",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G10–G25",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "ab G40",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.inetz.de/fileadmin/user_upload/inetz_G_vorlaeufiges_Preisblatt_2027.pdf (1. SLP; 3. Messung und Messstellenbetrieb)",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.inetz.de/startseite/netzzugang/netzentgelte/",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2029",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      },
      {
       "nr": 11,
       "bez": "Stadtwerke Konstanz",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "Stadtwerke Konstanz GmbH",
       "vnb": "700936",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "0–1.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -13019,7 +13746,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "1.001–4.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -13027,7 +13754,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "4.001–50.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -13035,7 +13762,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "50.001–300.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -13043,27 +13770,58 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "300.001–1.000.000",
+        "ap": null,
+        "gp": null,
+        "sockel": null,
+        "sockel_kwh": null
+       },
+       {
+        "stufe": 6,
+        "verbrauch": "ab 1.000.001",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "G4–G6",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G10–G16",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G25–G40",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G65",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G100",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.enwg-veroeffentlichungen.de/konstanz/Netze/Gasnetz/Netzzugang-Entgelte-/SWK-NNE-Gas-2027-vorl-gesch.xlsx (Excel; Preisblatt 1 SLP; Preisblatt 3 MSB/Messung)",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.enwg-veroeffentlichungen.de/konstanz/Netze/",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2029",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      },
      {
       "nr": 12,
@@ -13961,13 +14719,13 @@
      {
       "nr": 22,
       "bez": "EWR GmbH",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "EWR GmbH (Remscheid)",
       "vnb": "700822",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "1–2.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -13975,7 +14733,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "2.001–5.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -13983,7 +14741,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "5.001–50.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -13991,7 +14749,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "50.001–250.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -13999,7 +14757,7 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "250.001–500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14007,7 +14765,7 @@
        },
        {
         "stufe": 6,
-        "verbrauch": "",
+        "verbrauch": "500.001–1.000.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14015,27 +14773,40 @@
        },
        {
         "stufe": 7,
-        "verbrauch": "",
+        "verbrauch": "1.000.001–1.500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "G4–G6",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G10–G25",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G40–G100",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.ewr-netze-remscheid.de/de/Netze-Versorgung/Gasnetz/Netzzugang-Entgelte/Netznutzungsentgelte/vorlaeufige-Netzentgelte-Gas-2027.pdf",
+      "q_msb": "https://www.ewr-netze-remscheid.de/de/MSB/Gas/Messentgelte-und-Vertraege/Gas-Messentgelte-2027.pdf (Bild-PDF, visuell gelesen)",
+      "seite": "https://www.ewr-netze-remscheid.de/",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2029",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      },
      {
       "nr": 23,
@@ -14165,13 +14936,13 @@
      {
       "nr": 24,
       "bez": "e.wa riss Netze GmbH",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "e.wa riss Netze GmbH",
       "vnb": "700181",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "0–1.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14179,7 +14950,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "1.001–4.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14187,7 +14958,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "4.001–50.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14195,7 +14966,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "50.001–300.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14203,7 +14974,7 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "300.001–1.000.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14211,38 +14982,76 @@
        },
        {
         "stufe": 6,
-        "verbrauch": "",
+        "verbrauch": "1.000.001–1.500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "G4",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G6",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G10",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G16",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G25",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G40",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G65",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G100",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.ewa-netze.de/de/Netzbetrieb/Veroeffentlichungspflichten1/Gasnetz/Netzzugang-Entgelte-/Vorlaeufiges-Preisblatt-Netzentgelte-Gas-2027-zum-14.10.2026.pdf (Tabelle 4 SLP; Tabelle 5 MSB)",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.ewa-netze.de/",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2029",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      },
      {
       "nr": 25,
       "bez": "Netze Calw",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "Netze Calw GmbH",
       "vnb": "",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "0–10.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14250,7 +15059,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "10.001–25.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14258,7 +15067,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "25.001–50.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14266,7 +15075,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "50.001–100.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14274,7 +15083,7 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "100.001–250.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14282,7 +15091,7 @@
        },
        {
         "stufe": 6,
-        "verbrauch": "",
+        "verbrauch": "250.001–500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14290,38 +15099,51 @@
        },
        {
         "stufe": 7,
-        "verbrauch": "",
+        "verbrauch": "500.001–1.500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "G4–G10",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G16–G40",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G65–G250",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://netze-calw.de/wp-content/uploads/2026/10/vorl.-Preisblatt-Gasnetz-Netze-Calw-GmbH-ab-01.01.2027.pdf (1.1 SLP; 2. MSB/Messung)",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.netze-calw.de/",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2029",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      },
      {
       "nr": 26,
       "bez": "FairNetz GmbH",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "FairNetz GmbH",
       "vnb": "700121",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "1–1.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14329,7 +15151,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "1.001–4.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14337,7 +15159,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "4.001–50.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14345,7 +15167,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "50.001–300.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14353,7 +15175,7 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "300.001–1.000.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14361,38 +15183,61 @@
        },
        {
         "stufe": 6,
-        "verbrauch": "",
+        "verbrauch": "1.000.001–1.500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "G4/G6",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G10",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G16/G25",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G40/G65",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G100",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.fairnetzgmbh.de/Downloads/PDF/Gas/Preise/2027/vorl%C3%A4ufiges%20Preisblatt%20_Gas%20Netznutzung_01.01.2027.pdf",
+      "q_msb": "https://www.fairnetzgmbh.de/Downloads/PDF/Gas/Preise/2027/vorl%C3%A4ufiges%20Preisblatt_Gas%20Messung_01.2027.pdf",
+      "seite": "https://www.fairnetzgmbh.de/de/veroeffentlichungen/downloads",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2029",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      },
      {
       "nr": 27,
       "bez": "Netze Gesellschaft Südwest mbH",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "Netze-Gesellschaft Südwest mbH",
       "vnb": "700826",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "0–10.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14400,7 +15245,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "10.001–20.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14408,7 +15253,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "20.001–100.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14416,7 +15261,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "100.001–250.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14424,7 +15269,7 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "250.001–500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14432,27 +15277,48 @@
        },
        {
         "stufe": 6,
-        "verbrauch": "",
+        "verbrauch": "500.001–1.000.000",
+        "ap": null,
+        "gp": null,
+        "sockel": null,
+        "sockel_kwh": null
+       },
+       {
+        "stufe": 7,
+        "verbrauch": "1.000.001–1.500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "G2,5–G6",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G10–G25",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G40–G100",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.netze-suedwest.de/_Resources/Persistent/7/f/b/c/7fbc49406e3d0f7f66bcfe2e103e6be8114b6f61/20261006_NGS_vorl%C3%A4ufiges_Preisblatt_2027_V1.pdf (Tabelle 1 SLP, S. 3; Tabelle 4/5 Messung/MSB)",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.netze-suedwest.de/lieferanten",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2029",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      },
      {
       "nr": 28,
@@ -14725,13 +15591,13 @@
      {
       "nr": 31,
       "bez": "(SWE) Gasversorgung Malsch-Durmersheim",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "Gasversorgung Malsch-Durmersheim (Netzbetrieb Stadtwerke Ettlingen)",
       "vnb": "700306",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "1–1.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14739,7 +15605,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "1.001–4.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14747,7 +15613,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "4.001–50.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14755,7 +15621,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "50.001–300.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14763,7 +15629,7 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "300.001–1.000.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14771,38 +15637,51 @@
        },
        {
         "stufe": 6,
-        "verbrauch": "",
+        "verbrauch": "ab 1.000.001",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "G4–G6",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G10–G25",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G40–G160",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.sw-ettlingen.de/de/Netze1/Erdgasnetz-Malsch-Durmersheim/Netzzugang-Entgelte-/vorlaeufige-Netznutzungsentgelte-GVMD-2027.pdf (SLP; Preisblatt 3 MSB/Messung)",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.sw-ettlingen.de/",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2029",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      },
      {
       "nr": 32,
       "bez": "Stadtwerke Balingen",
-      "firma": "Firmierung wird bei der nächsten Recherche ermittelt",
+      "firma": "Stadtwerke Balingen",
       "vnb": "",
       "typ": "standard",
       "stufen": [
        {
         "stufe": 1,
-        "verbrauch": "",
+        "verbrauch": "0–2.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14810,7 +15689,7 @@
        },
        {
         "stufe": 2,
-        "verbrauch": "",
+        "verbrauch": "2.001–10.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14818,7 +15697,7 @@
        },
        {
         "stufe": 3,
-        "verbrauch": "",
+        "verbrauch": "10.001–25.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14826,7 +15705,7 @@
        },
        {
         "stufe": 4,
-        "verbrauch": "",
+        "verbrauch": "25.001–50.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14834,7 +15713,7 @@
        },
        {
         "stufe": 5,
-        "verbrauch": "",
+        "verbrauch": "50.001–200.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14842,7 +15721,7 @@
        },
        {
         "stufe": 6,
-        "verbrauch": "",
+        "verbrauch": "200.001–500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
@@ -14850,27 +15729,40 @@
        },
        {
         "stufe": 7,
-        "verbrauch": "",
+        "verbrauch": "500.001–1.500.000",
         "ap": null,
         "gp": null,
         "sockel": null,
         "sockel_kwh": null
        }
       ],
-      "zaehler": [],
-      "q_nne": "",
-      "q_msb": "",
-      "seite": "",
+      "zaehler": [
+       {
+        "zg": "bis G6",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G10–G25",
+        "msb": null,
+        "messung": null
+       },
+       {
+        "zg": "G40–G100",
+        "msb": null,
+        "messung": null
+       }
+      ],
+      "q_nne": "https://www.stadtwerke.balingen.de/balingenGips/Balingen/EnWGTool/Gasnetz/Vertraege_und_Verfahren/Netzentgelte/Vorlaeufiges-Preisblatt-Netzentgelte-Gas-ab-1.1.27.pdf",
+      "q_msb": "wie Netzentgelte-Preisblatt",
+      "seite": "https://www.stadtwerke.balingen.de/balingenGips/Gips?SessionMandant=Balingen&Anwendung=EnWGKnotenAnzeigen&PrimaryId=3013&Mandantkuerzel=Balingen&Navigation=J",
       "stand": "Noch nicht veröffentlicht · erwartet ab Mitte Oktober 2029",
-      "hinweis": "Anzahl der Stufen laut Ihrer Liste; Werte folgen aus dem offiziellen Preisblatt.",
+      "hinweis": "",
       "flags": [],
       "info": [],
       "geaendert": [],
       "neu": true,
-      "update": {
-       "datum": "12.11.2026",
-       "text": "Gas-Netzbetreiber neu aufgenommen."
-      }
+      "update": null
      }
     ]
    }
