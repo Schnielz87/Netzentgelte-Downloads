@@ -1,6 +1,6 @@
 # Strom-Netzentgelte – Downloads
 
-Strom-Netzentgelte (SLP, Niederspannung ohne Leistungsmessung, netto) für die Netzbetreiber aus Ihrer Liste (derzeit 47), je Jahr.
+Strom- und Gas-Netzentgelte (SLP, netto) je Netzbetreiber und Jahr. Strom: Grund-/Arbeitspreis, ET, DT, mME. Gas: Verbrauchsstufen mit AP/GP sowie Messstellenbetrieb und Messung je Zählergröße (Reiter „Gas“).
 
 **Excel herunterladen:** [Netzentgelte_Strom.xlsx](https://github.com/Schnielz87/netzentgelte-downloads/raw/main/Netzentgelte_Strom.xlsx)
 
