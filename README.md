@@ -1,4 +1,4 @@
-# Strom-Netzentgelte – Downloads
+# Strom/Gas Netzentgelte – Downloads
 
 Strom- und Gas-Netzentgelte (SLP, netto) je Netzbetreiber und Jahr. Strom: Grund-/Arbeitspreis, ET, DT, mME. Gas: Verbrauchsstufen mit AP/GP sowie Messstellenbetrieb und Messung je Zählergröße (Reiter „Gas“).
 
