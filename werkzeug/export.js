@@ -74,63 +74,80 @@ async function buildWorkbook(ExcelJS, template, jahre, gas) {
     const foot = 8 + rows.length + 2;
     band(foot, foot, "QUELLENHINWEIS  |  Spalten I und J enthalten die direkten PDF-Links der Netzbetreiber mit Seitenangabe. Gelb markierte Werte: Besonderheit zur Gültigkeit oder noch offen, siehe Spalte L. Violett markiert: neu aufgenommene Netzbetreiber (Werte noch ungeprüft); die Markierung entfällt mit der nächsten Aktualisierung. Für abrechnungsrelevante Verwendung Zusatzleistungen (z. B. Tarifschaltgerät, Wandler), abweichende Messintervalle und endgültige Preisblätter prüfen.", { size: 10, color: { argb: NAVY } }, LIGHT, 45);
   }
-  if (gas && gas.jahre && Object.keys(gas.jahre).length) buildGasSheet(wb, gas, { fill, box, NAVY, NAVY2, TEAL, TXT, VAL, WARN, WARN_TXT, LIGHT });
   const last = jahre.length ? wb.getWorksheet(String(jahre[jahre.length - 1].jahr)) : null;
   if (last) wb.views = [{ activeTab: wb.worksheets.indexOf(last) }];
   return wb.xlsx.writeBuffer();
 }
 
-// Reiter „Gas“: je Netzbetreiber ein Block, Jahre nebeneinander (wie Kundenvorlage).
-function buildGasSheet(wb, gas, st) {
-  const { fill, box, NAVY, NAVY2, TEAL, TXT, VAL, WARN, WARN_TXT, LIGHT } = st;
-  const old = wb.getWorksheet("Gas"); if (old) wb.removeWorksheet(old.id);
-  const ys = Object.keys(gas.jahre).sort();
-  const ws = wb.addWorksheet("Gas", { views: [{ state: "frozen", xSplit: 3, ySplit: 3, zoomScale: 90 }], pageSetup: { orientation: "landscape", fitToPage: true, fitToWidth: 1, fitToHeight: 0 } });
-  const W = 4, C0 = 4; // 4 Spalten je Jahr ab Spalte D
-  ws.getColumn(1).width = 9; ws.getColumn(2).width = 20; ws.getColumn(3).width = 11;
-  ys.forEach((y, k) => { for (let j = 0; j < W; j++) ws.getColumn(C0 + k * W + j).width = 11; ws.getColumn(C0 + k * W + W).width = 2; });
-  const lastCol = C0 + ys.length * (W + 1) - 2;
-  ws.mergeCells(1, 1, 1, lastCol); const t = ws.getCell(1, 1);
-  t.value = "NETZENTGELTE GAS  |  SLP-Netznutzung nach Verbrauchsstufen · Messstellenbetrieb nach Zählergröße · alle Preise netto";
-  t.font = { name: "Calibri", bold: true, size: 16, color: { argb: "FFFFFFFF" } }; t.fill = fill(NAVY); t.alignment = { vertical: "middle", indent: 1 }; ws.getRow(1).height = 30;
-  ws.mergeCells(2, 1, 2, lastCol); const t2 = ws.getCell(2, 1);
-  t2.value = "AP = Arbeitspreis ct/kWh · GP = Grundpreis €/Jahr · MSB = Messstellenbetrieb €/Jahr · Messung €/Jahr · Sockel-Modell: Sockelbetrag €/Jahr deckt die Menge „durch Sockel“ (kWh) ab. Gelb = offen/fraglich, violett = neu aufgenommen.";
-  t2.font = { name: "Calibri", size: 10, color: { argb: "FFFFFFFF" } }; t2.fill = fill(TEAL); t2.alignment = { vertical: "middle", wrapText: true, indent: 1 }; ws.getRow(2).height = 30;
-  ys.forEach((y, k) => { const c = ws.getCell(3, C0 + k * W); ws.mergeCells(3, C0 + k * W, 3, C0 + k * W + W - 1); c.value = String(y); c.font = { name: "Calibri", bold: true, size: 20, color: { argb: NAVY } }; c.alignment = { horizontal: "center" }; });
-  ws.getRow(3).height = 28;
-  const base = gas.jahre[ys[0]].rows || [];
-  let row = 5;
-  const numCell = (c, v, digits) => { c.value = typeof v === "number" ? v : null; c.numFmt = digits === 4 ? "#,##0.0000" : (digits === 0 ? "#,##0" : "#,##0.00"); c.alignment = { horizontal: "right" }; c.border = box; c.font = { name: "Calibri", size: 10, color: { argb: TXT } }; };
-  base.forEach((b0, idx) => {
-    const name = (b0.bez || "") + (b0.vnb ? " (" + b0.vnb + ")" : "") + (b0.neu ? "  NEU" : "");
-    const hc = ws.getCell(row, 1); ws.mergeCells(row, 1, row, 3); hc.value = name;
-    hc.font = { name: "Calibri", bold: true, underline: true, size: 11, color: { argb: b0.neu ? "FF5B3FC4" : NAVY } }; hc.fill = fill(b0.neu ? "FFEFEAFD" : "FFFFF200");
-    ys.forEach((y, k) => { const r = (gas.jahre[y].rows || [])[idx] || {}; const c = ws.getCell(row, C0 + k * W); c.value = Number(y); c.font = { name: "Calibri", bold: true, size: 10 }; c.alignment = { horizontal: "right" }; c.fill = fill(VAL); c.border = box;
-      const s = ws.getCell(row, C0 + k * W + 1); ws.mergeCells(row, C0 + k * W + 1, row, C0 + k * W + W - 1);
-      s.value = /endg/i.test(r.stand || "") ? "endgültig" : (/vorl/i.test(r.stand || "") ? "vorläufig" : "noch offen"); s.font = { name: "Calibri", size: 9, color: { argb: "FF5B6B7A" } }; });
+// Eigene Gas-Arbeitsmappe im Aufbau der Kundenvorlage: je Netzbetreiber ein Block, Jahre nebeneinander.
+async function buildGasWorkbook(ExcelJS, gas) {
+  const wb = new ExcelJS.Workbook();
+  const fill = (argb) => ({ type: "pattern", pattern: "solid", fgColor: { argb } });
+  const thin = { style: "thin", color: { argb: "FF000000" } }, med = { style: "medium", color: { argb: "FF000000" } };
+  const box = { top: thin, left: thin, bottom: thin, right: thin };
+  const PAL = ["FFE2EFDA", "FFEAF1A0", "FFFCE3A9", "FFF8CBCB"]; // 2027 hellgrün · 2028 gelbgrün · 2029 orange · 2030 rosa
+  const yc = (y) => PAL[Math.max(0, Number(y) - 2027) % 4];
+  const num = (v) => typeof v === "number";
+  const all = Object.keys(gas.jahre).sort();
+  const hasData = (y) => (gas.jahre[y].rows || []).some((r) => (r.stufen || []).some((s) => num(s.ap)) || (r.zaehler || []).some((z) => num(z.msb)));
+  const lastData = all.filter(hasData).pop() || all[0];
+  const ys = all; // alle Jahre der App (ab 2027), wie beim Strom
+  const ws = wb.addWorksheet("Gas", { views: [{ state: "frozen", xSplit: 3, ySplit: 2, zoomScale: 90 }], pageSetup: { orientation: "landscape", fitToPage: true, fitToWidth: 1, fitToHeight: 0 } });
+  const W = 4, C0 = 4;
+  ws.getColumn(1).width = 9; ws.getColumn(2).width = 19; ws.getColumn(3).width = 11;
+  ys.forEach((y, k) => { for (let j = 0; j < W; j++) ws.getColumn(C0 + k * W + j).width = 12; });
+  const t = ws.getCell(1, 1); ws.mergeCells(1, 1, 1, 3); t.value = "Netznutzungsentgelte Gas"; t.font = { name: "Arial", bold: true, size: 14 }; t.border = { top: thin, left: thin, bottom: thin, right: thin };
+  ys.forEach((y, k) => { const c = ws.getCell(1, C0 + k * W); ws.mergeCells(1, C0 + k * W, 1, C0 + k * W + W - 1); c.value = String(y); c.font = { name: "Arial", size: 22 }; c.alignment = { horizontal: "center" }; });
+  ws.getRow(1).height = 32;
+  const n2 = ws.getCell(2, 1); ws.mergeCells(2, 1, 2, 3 + ys.length * W);
+  n2.value = "SLP-Netzentgelte Gas, netto. AP = Arbeitspreis ct/kWh · GP = Grundpreis €/Jahr · MSB = Messstellenbetrieb €/Jahr je Zählergröße (ZG) · Messung €/Jahr. Gelb = Wert offen. Quellen: offizielle Preisblätter (Links in der App).";
+  n2.font = { name: "Arial", size: 9, color: { argb: "FF00A050" } };
+  let row = 4;
+  const latestRows = gas.jahre[ys[ys.length - 1]].rows || [];
+  latestRows.forEach((L, idx) => {
+    const per = ys.map((y) => (gas.jahre[y].rows || [])[idx] || {});
+    const n = Math.max(...per.map((r) => Math.max((r.stufen || []).length, (r.zaehler || []).length)));
+    const sockel = L.typ === "sockel";
+    // Kopfzeile: Name + Jahr/Status
+    const h = ws.getCell(row, 1); ws.mergeCells(row, 1, row, 2);
+    h.value = (L.bez || "") + (L.vnb ? " (" + L.vnb + ")" : ""); h.font = { name: "Arial", bold: true, underline: true, size: 10 }; h.fill = fill(L.neu ? "FFEFEAFD" : "FFFFFF00");
+    ys.forEach((y, k) => {
+      const r = per[k]; const c = ws.getCell(row, C0 + k * W); c.value = Number(y); c.font = { name: "Arial", bold: true, size: 10 }; c.alignment = { horizontal: "right" };
+      c.fill = fill(yc(y)); c.border = { top: med, left: med, bottom: med, right: med };
+      const st = ws.getCell(row, C0 + k * W + 1); const s = String(r.stand || "");
+      st.value = /endg/i.test(s) ? "endgültig" : (/vorl/i.test(s) ? "vorläufig" : "");
+      st.font = { name: "Arial", bold: true, size: 10, color: { argb: "FF00A050" } };
+    });
     row++;
-    const sockel = b0.typ === "sockel";
+    // Spaltenköpfe
+    const hr = ws.getRow(row); hr.getCell(3).value = "ZG"; hr.getCell(3).font = { name: "Arial", bold: true, size: 10 };
+    [1, 2, 3].forEach((c) => (hr.getCell(c).border = { bottom: med }));
     const heads = sockel ? ["Sockelbetrag", "durch Sockel", "AP", "MSB"] : ["AP", "GP", "MSB", "Messung"];
-    const hr = ws.getRow(row); hr.getCell(3).value = "ZG"; hr.getCell(3).font = { name: "Calibri", bold: true, size: 10 }; hr.getCell(3).border = box;
-    ys.forEach((y, k) => heads.forEach((h, j) => { const c = hr.getCell(C0 + k * W + j); c.value = h; c.font = { name: "Calibri", bold: true, size: 10, color: { argb: "FFFFFFFF" } }; c.fill = fill(NAVY2); c.border = box; }));
+    ys.forEach((y, k) => heads.forEach((hd, j) => { const c = hr.getCell(C0 + k * W + j); c.value = hd; c.font = { name: "Arial", bold: true, size: 10 }; c.border = { top: med, bottom: med, left: thin, right: thin }; }));
     row++;
-    const n = Math.max((b0.stufen || []).length, (b0.zaehler || []).length);
     for (let i = 0; i < n; i++) {
-      const s0 = (b0.stufen || [])[i], z0 = (b0.zaehler || [])[i];
       const r = ws.getRow(row);
-      if (s0) { r.getCell(1).value = "Stufe " + (s0.stufe || i + 1); r.getCell(2).value = s0.verbrauch || ""; }
-      if (z0) r.getCell(3).value = z0.zg || "";
-      [1, 2, 3].forEach((c) => { r.getCell(c).border = box; r.getCell(c).font = { name: "Calibri", size: 10, bold: c === 3, color: { argb: TXT } }; });
+      const sL = per.map((p) => (p.stufen || [])[i]).filter(Boolean).pop(); const zL = per.map((p) => (p.zaehler || [])[i]).filter(Boolean).pop();
+      if (sL) { r.getCell(1).value = "Stufe " + (sL.stufe || i + 1); r.getCell(2).value = sL.verbrauch || ""; }
+      if (zL && zL.zg) r.getCell(3).value = zL.zg;
+      [1, 2, 3].forEach((c) => { r.getCell(c).border = box; r.getCell(c).font = { name: "Arial", size: 10, bold: c === 3 }; });
+      if (zL && zL.zg === "Messung") r.getCell(3).fill = fill("FFBDD7EE");
       ys.forEach((y, k) => {
-        const rr = (gas.jahre[y].rows || [])[idx] || {}; const s = (rr.stufen || [])[i], z = (rr.zaehler || [])[i];
-        const cols = sockel ? [[s && s.sockel, 2, !!s], [s && s.sockel_kwh, 0, false], [s && s.ap, 4, !!s], [z && z.msb, 2, !!z]]
-                            : [[s && s.ap, 4, !!s], [s && s.gp, 2, !!s], [z && z.msb, 2, !!z], [z && z.messung, 2, false]];
-        cols.forEach(([v, dg, must], j) => { const c = r.getCell(C0 + k * W + j); numCell(c, v, dg); c.fill = fill(must && typeof v !== "number" ? WARN : VAL); });
+        const p = per[k], s = (p.stufen || [])[i], z = (p.zaehler || [])[i];
+        const isMess = z && z.zg === "Messung";
+        const cols = sockel ? [[s && s.sockel, "#,##0.00", !!s], [s && s.sockel_kwh, "#,##0", false], [s && s.ap, "0.0000", !!s], [z && (isMess ? z.msb : z.msb), "#,##0.00", !!(z && z.zg && !isMess)]]
+                            : [[s && s.ap, "0.0000", !!s], [s && s.gp, "#,##0.00", !!s], [z && z.msb, "#,##0.00", !!(z && z.zg)], [i === 0 && z ? z.messung : null, "#,##0.00", false]];
+        cols.forEach(([v, f, must], j) => {
+          const c = r.getCell(C0 + k * W + j); c.value = num(v) ? v : null; c.numFmt = f; c.alignment = { horizontal: "right" }; c.border = box; c.font = { name: "Arial", size: 10 };
+          const yearHas = (p.stufen || []).some((x) => num(x.ap)) || (p.zaehler || []).some((x) => num(x.msb));
+          c.fill = fill(must && !num(v) && Number(y) >= 2027 ? "FFFFF2CC" : (num(v) || (must && yearHas) ? yc(y) : "FFFFFFFF"));
+        });
       });
       row++;
     }
-    const nr = ws.getRow(row); nr.getCell(1).value = (b0.hinweis || "").slice(0, 250); nr.getCell(1).font = { name: "Calibri", italic: true, size: 9, color: { argb: "FF5B6B7A" } };
-    row += 2;
+    if (L.hinweis) { const c = ws.getCell(row, 1); c.value = L.hinweis.slice(0, 300); c.font = { name: "Arial", italic: true, size: 8, color: { argb: "FF5B6B7A" } }; row++; }
+    row++;
   });
+  return wb.xlsx.writeBuffer();
 }
 /* EXPORT-END */

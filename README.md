@@ -2,7 +2,7 @@
 
 Strom- und Gas-Netzentgelte (SLP, netto) je Netzbetreiber und Jahr. Strom: Grund-/Arbeitspreis, ET, DT, mME. Gas: Verbrauchsstufen mit AP/GP sowie Messstellenbetrieb und Messung je Zählergröße (Reiter „Gas“).
 
-**Excel herunterladen:** [Netzentgelte_Strom.xlsx](https://github.com/Schnielz87/netzentgelte-downloads/raw/main/Netzentgelte_Strom.xlsx)
+**Excel Strom:** [Netzentgelte_Strom.xlsx](https://github.com/Schnielz87/netzentgelte-downloads/raw/main/Netzentgelte_Strom.xlsx) · **Excel Gas:** [Netzentgelte_Gas.xlsx](https://github.com/Schnielz87/netzentgelte-downloads/raw/main/Netzentgelte_Gas.xlsx)
 
 **Ansicht im Browser:** https://claude.ai/artifact/838cFukJgfQWydkKUeBzVB
 
