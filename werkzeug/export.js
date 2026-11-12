@@ -66,11 +66,13 @@ async function buildWorkbook(ExcelJS, template, jahre) {
           if (n % 2 === 0) c.fill = fill(ZEBRA);
           c.alignment = { horizontal: col === 1 ? "center" : undefined, vertical: "middle", wrapText: true };
         }
+        if (r.neu && col <= 3) { c.fill = fill("FFEFEAFD"); c.font = { name: "Calibri", size: 10, bold: col === 2, color: { argb: "FF5B3FC4" } }; }
+        if (r.neu && col === 2) c.value = (r.bez || "") + "  (NEU)";
         if (COLKEY[col] && flags.has(COLKEY[col])) { c.fill = fill(WARN); c.font = { name: "Calibri", size: 10, bold: true, color: { argb: WARN_TXT } }; }
       });
     });
     const foot = 8 + rows.length + 2;
-    band(foot, foot, "QUELLENHINWEIS  |  Spalten I und J enthalten die direkten PDF-Links der Netzbetreiber mit Seitenangabe. Gelb markierte Werte: Besonderheit zur Gültigkeit oder noch offen, siehe Spalte L. Für abrechnungsrelevante Verwendung Zusatzleistungen (z. B. Tarifschaltgerät, Wandler), abweichende Messintervalle und endgültige Preisblätter prüfen.", { size: 10, color: { argb: NAVY } }, LIGHT, 45);
+    band(foot, foot, "QUELLENHINWEIS  |  Spalten I und J enthalten die direkten PDF-Links der Netzbetreiber mit Seitenangabe. Gelb markierte Werte: Besonderheit zur Gültigkeit oder noch offen, siehe Spalte L. Violett markiert: neu aufgenommene Netzbetreiber (Werte noch ungeprüft); die Markierung entfällt mit der nächsten Aktualisierung. Für abrechnungsrelevante Verwendung Zusatzleistungen (z. B. Tarifschaltgerät, Wandler), abweichende Messintervalle und endgültige Preisblätter prüfen.", { size: 10, color: { argb: NAVY } }, LIGHT, 45);
   }
   const last = jahre.length ? wb.getWorksheet(String(jahre[jahre.length - 1].jahr)) : null;
   if (last) wb.views = [{ activeTab: wb.worksheets.indexOf(last) }];
